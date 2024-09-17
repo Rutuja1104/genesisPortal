@@ -1,0 +1,126 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.orgTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 12px !important;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.orgTable thead tr {
+    background-color: #f0f4f8;
+    color: #2e2b2b;
+    text-align: left;
+}
+
+.orgTable th,
+.orgTable td {
+    padding: 10px 15px;
+}
+
+.orgTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.orgTable tbody tr:nth-of-type(even) {
+    background-color: #ffff;
+}
+
+.orgTable tbody tr:last-of-type {
+    border-bottom: 2px solid #405189;
+}
+
+.orgTable tbody tr.active-row {
+    font-weight: bold;
+    color: #405189;
+}
+
+.orgTable td:nth-child(2) .orgInputFields {
+    width: 120px;
+}
+
+.orgTable .edit-cell-container button {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+
+.orgTable .footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+
+.orgTable .add-button {
+    color: #405189;
+}
+
+.orgTable .remove-button {
+    color: #e44747;
+}
+
+.orgTable .footer-buttons button {
+    border: none;
+    background-color: transparent;
+}
+
+.orgTable .edit-cell-action button[name="edit"] {
+    color: #ffb918;
+}
+
+.orgTable .edit-cell-action button[name="cancel"] {
+    color: #7b7b7b;
+}
+
+.orgTable .edit-cell-action button[name="done"] {
+    color: #405189;
+}
+
+.orgTable .edit-cell-action button[name="done"]:disabled {
+    color: #ccc;
+}
+
+.orgTable .edit-cell-action button[name="remove"] {
+    color: red;
+    background-color: rgb(230, 208, 208);
+}
+
+.orgTable .orgMandatorySelect {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.orgTable .edit-cell-action {
+    display: flex;
+    gap: 5px;
+}
+
+.orgTable .edit-cell-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+}
+
+.orgTable .checkboxInput {
+    width: 16px;
+    height: 16px;
+}
+
+.orgTable td:first-child .orgInputFields {
+    width: 142px;
+}
+.p-filter-column {
+    padding-top: 0px;
+}
+.p-sortable-column {
+    padding-bottom: 0px;
+    padding-top: 10px;
+}

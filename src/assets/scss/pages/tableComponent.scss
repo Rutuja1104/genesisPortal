@@ -1,0 +1,80 @@
+.custom-datatable .p-paginator {
+    justify-content: flex-end;
+}
+
+.p-column-filter-menu-button,
+.p-column-filter-clear-button {
+    margin-left: 7px;
+    border-radius: 5px;
+}
+
+.p-datatable-emptymessage td {
+    text-align: center;
+}
+
+.p-datatable-wrapper {
+    min-height: 25rem !important;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.p-inputwrapper-filled {
+    align-items: center;
+}
+.p-dropdown-items,
+.p-column-filter-row-items {
+    padding: 0;
+    margin-bottom: 0;
+}
+.p-column-filter-clear-button {
+    display: none;
+}
+.p-datatable .p-datatable-loading-icon.p-icon {
+    width: 2.5rem;
+    height: 5rem;
+    color: #096fb3;
+}
+.p-datatable .p-datatable-loading-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 2;
+}
+.css-3w2yfm-ValueContainer,
+.css-1dyz3mf {
+    flex-wrap: nowrap !important;
+    overflow: auto !important;
+}
+.css-wsp0cs-MultiValueGeneric {
+    overflow: auto !important;
+    width: fit-content;
+}
+.css-1p3m7a8-multiValue {
+    min-width: fit-content !important;
+}
+
+.button-icon {
+    position: absolute;
+    border: none;
+    font-size: 22px;
+    right: 9px;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    top: 6px;
+    font-weight: 600;
+    color: gray;
+    z-index: 10;
+}
+.p-column-filter-element {
+    position: relative;
+}
+.flatpickr-input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-shadow {
+    box-shadow: 0px 0px 12px 5px #80808017;
+}

@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: "300";
+    font-style: normal;
+}
+
+#page-topbar {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: 100%;
+    // height: 6%;
+    text-align: center;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 1002;
+}
+
+.navbar-menu {
+    width: 250px;
+    z-index: 1002;
+    background: var(--vz-vertical-menu-bg);
+    border-right: 1px solid #fff;
+    bottom: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+    padding: 0 0 calc(70px + 25px) 0;
+    transition: all 0.1s ease-out;
+}
+
+.app-menu {
+    background: $sidebar-color;
+    border-right: 1px solid #087d9e;
+    color: white;
+}
+
+.navbar-brand-box {
+    text-align: center;
+    padding: 10%;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    padding: 5px;
+    font-size: 14px;
+    padding-bottom: 1px;
+}
+
+#navbar-email {
+    font-weight: 400;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    column-gap: 12px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu-title {
+    letter-spacing: 0.05em;
+    cursor: default;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #838fb9;
+    font-weight: 600;
+}
+
+.menu-title span {
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.nav-item {
+    text-align: left;
+    color: white;
+    font-size: 12px;
+    :hover {
+        background-color: #324379;
+    }
+}
+.selectedTab {
+    background-color: #324379;
+}
+
+.nav-link {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #abb9e8;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.navbar-menu .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 1.5rem;
+    color: white;
+    font-size: 15px;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.collapsing {
+    overflow: hidden;
+    transition: height 0.35s ease;
+    height: 111px;
+}
+
+.nav-link .menu-link::after {
+    display: block;
+    content: ">";
+
+    margin-left: auto;
+    transition: transform 0.2s;
+    font-size: 1.05rem;
+    position: absolute;
+    right: 18px;
+    color: white;
+}
+
+.label-class {
+    color: #abb9e8;
+}
+
+.arrow-logo {
+    position: absolute;
+    right: 20px;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer {
+    bottom: 0;
+    padding: 20px 0.75rem;
+    position: fixed;
+    right: 0;
+    color: #98a6ad;
+    left: 250px;
+    height: 60px;
+    background-color: white;
+}
+
+.page-content {
+    padding: 3% 1% 1% 1%;
+}
+
+.main-content {
+    margin-left: 250px;
+}
+
+@media (max-width: 667px) {
+    .navbar-menu {
+        width: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    #page-topbar {
+        left: 0;
+        width: 100%;
+    }
+
+    .footer {
+        left: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .scroll-icon {
+        display: block;
+    }
+
+    .navbar-brand-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fc-header-toolbar {
+        flex-direction: column;
+    }
+}
+
+.nav-header {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-weight: 600;
+    padding: 8px 0px 15px 22px;
+    font-size: 20px;
+}
+
+.avatar-title {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    font-weight: 500;
+    color: #005c71;
+    justify-content: center;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.nav-border-bottom {
+    border-bottom: 1px solid #8ea4aa;
+}
+
+.LogoutText {
+    font-weight: 600;
+}
+
+.LogoutTittle {
+    font-weight: 900;
+}

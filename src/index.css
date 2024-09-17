@@ -1,0 +1,22 @@
+::-webkit-scrollbar-thumb {
+    background-color: #d2cfcf;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar {
+    width: 10px !important;
+    height: 6px !important;
+}
+
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: 14px !important;
+        padding: 8px 16px !important;
+    }
+}
